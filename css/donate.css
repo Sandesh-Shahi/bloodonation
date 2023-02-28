@@ -10,27 +10,27 @@
 {
     display: flex;
     background-color: rgb(0, 0, 0);
-    height: 70px;
+    height: 65px;
     position:fixed;
     z-index: 999;
     text-align: center;
-    gap: 45%;
+    gap: 40%;
     width: 100%;
     top:0;
     
 }
+
 .logo img
 {
     display: flex;
     width:auto;
     justify-content: left;
-    /* margin-left: 20px; */
-    height: 70px;
+    height: 60px;
     border-top-right-radius: 3px;
     border-bottom: black 3px solid;
     border-bottom-right-radius: 3px;
 }
-nav
+.nav
 {
     
     display: flex;
@@ -45,22 +45,22 @@ nav
 }
 
 
-nav ul li a{
+.nav ul li a{
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-family: 'Poppins', sans-serif;
     
     
 }
-nav ul {
+.nav ul {
     list-style: none;
    display:flex;
    flex-direction:row;
    text-decoration: none;
-   gap: 40px;
+   gap: 2.5rem;
    
 }
-nav ul li 
+.nav ul li 
 {
     display: flex;
     justify-content: center;
@@ -75,7 +75,7 @@ nav ul li i{
 .header button{
     display: none;
 }
-nav ul li a:hover{
+.nav ul li a:hover{
     text-decoration: none;
 }
 .carousel-item img{
@@ -179,6 +179,68 @@ form{
 }
 
 /* @Media query Section--------------------------------------- */
+@media screen and (max-width: 1380px)
+{
+
+    .header
+    {
+        display: flex;
+        background-color: rgb(0, 0, 0);
+        height: 65px;
+        position:fixed;
+        z-index: 999;
+        text-align: center;
+        gap: 30%;
+        width: 100%;
+        top:0;
+        
+    }
+    .logo img
+    {
+        display: flex;
+        width:auto;
+        justify-content: left;
+        height: 60px;
+        border-top-right-radius: 3px;
+        border-bottom: black 3px solid;
+        border-bottom-right-radius: 3px;
+    }
+    .nav
+    {
+        
+        display: flex;
+        width: 100%;
+        /* justify-content:right; */
+        padding: 15px;
+        
+        
+    
+    
+    }
+    
+    
+    .nav ul li a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-family: 'Poppins', sans-serif;
+        
+        
+    }
+    .nav ul {
+        list-style: none;
+       display:flex;
+       flex-direction:row;
+       text-decoration: none;
+       gap: 1.2rem;
+       
+    }
+    .nav ul li 
+    {
+        display: flex;
+        justify-content: center;
+    
+    }
+}
 @media screen and (max-width: 1080px)
 {
     .logo img
@@ -243,7 +305,7 @@ form{
     flex-direction: column;
     align-items: center;
     color: white;
-    background-color: rgb(59, 59, 90);
+    background-color: rgb(0, 0, 0);
 
     border-top: 5px rgb(17, 56, 252) solid;
  
@@ -360,7 +422,7 @@ form{
     flex-direction: column;
     align-items: center;
     color: white;
-    background-color: rgb(59, 59, 90);
+    background-color: rgb(0, 0, 0);
     border-top: 5px rgb(17, 56, 252) solid;
  
 }
@@ -411,6 +473,9 @@ form{
 
 
 }
+
+    
+
 
   
   
