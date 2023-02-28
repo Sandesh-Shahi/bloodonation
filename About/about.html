@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Donate</title>
+  <link rel="stylesheet" href="../css/donate.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="about.css">
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+   
+  </script>
+  <script>
+    $(document).ready(function(){
+      $("#check").click(function(){
+        $(".nav ul").css("right","0");
+      });
+      $("#img").click(function(){
+        $(".nav ul").css("right","-100%");
+      });
+      $(".nav ul ").mouseleave(function () {
+				$(".nav ul").css("right", "-100%");
+			});
+    });
+  </script>
+</head>
+
+<body>
+  <!-- Header -->
+
+  <div class="header">
+    <div class="logo">
+      <a href="../index.html"><img src="/img/blood .png" alt="Blood Logo"></a>
+    </div>
+    <nav class=" nav">
+      <ul>
+        <li>
+          <a href="../index.html" target="_top"><i class="fa fa-home" style="color:red;"></i>
+            Home</a>
+  
+        </li>
+        <li> <a href="../gallery/Gallery.html" target="_parent"><i class="fa fa-phone" style="color:red;"></i>
+            Contact Us</a>
+        </li>
+        <li> <a href="../news/news.html" target="_parent"><i class="fa fa-rss" style="color:red;"></i>
+            News</a>
+        </li>
+        <li> <a href="../About/about.html" target="_parent"><i class="fa fa-address-card" style="color:red;"></i> About Us</a>
+        </li>
+        <li> <a href="../RequestForBlood/request.html" target="_parent"><i class="fa fa-heart" style="color:red;"></i> Request for Blood</a>
+        </li>
+        <li> <a href="../login/Login.html" target="_parent"><i class="fa fa-arrow-up" style="color:red;"></i> Login</a>
+        </li>
+      </ul>
+    </nav>
+   
+   
+    <button type="button" id="check"> <img id="img" src="../img/bar.png"  alt=""></button>  
+    </div>
+  
+  <h1 class="h1">About Us</h1>
+  <div class="about1">
+   
+    <img src="../gallery/img/vol.jpeg" alt="">
+  
+   <div class="para"> <p>We are a team of professionals dedicated to promoting blood donation and saving lives. Our website provides all
+    the information you need to become a blood donor, including eligibility requirements and the donation process. We
+    believe that every donation, no matter how small, has the potential to make a difference. Our platform is designed
+    to be safe and secure, and we are committed to working with blood drives and donation centers that meet strict
+    safety and regulatory standards. Join us in our mission to promote blood donation and make a positive impact on
+    the world.</p></div>
+  </div>
+  <!-- <footer>Footer </footer> -->
+  <div class="footer">
+    <div class="footer-content">
+
+      <div class="footer-section about">
+        <h1 class="logo-text"><span>Blood</span>Bank</h1>
+
+        <p>
+          Blood Bank is a non-profit organization that helps people in need of blood. We are a group of volunteers who
+          are dedicated to helping people in need of blood. We are a group of volunteers who are dedicated to helping
+          people in need of blood.
+        </p>
+        <div class="contact">
+          <span><i class="fa fa-phone"></i> &nbsp; 01-1234567</span>
+          <span><i class="fa fa-envelope"></i> &nbsp;
+          </span>
+        </div>
+      </div>
+      <div class="footer-section">
+        <div class="links">
+          <h1><span>Quick </span>Links</h1>
+          <br>
+          <ul>
+            <li> <a href="../Blood.html">
+                <i class="fa fa-home" style="color:red;"></i>Home</li>
+            </a>
+            <li><a href="../gallery/Gallery.html">
+                <i class="fa fa-phone" style="color:red;"></i>Contact Us </li>
+            </a>
+            <li><a href="../news/news.html">
+                <i class="fa fa-rss" style="color:red;"></i>News</li>
+            </a>
+            <li><a href="../About/about.html">
+                <i class="fa fa-address-card" style="color:red;"></i> About Us</li>
+            </a>
+            <li><a href="../RequestForBlood/request.html">
+
+                <i class="fa fa-heart" style="color:red;"></i> Request for Blood</li>
+            </a>
+          </ul>
+        </div>
+
+      </div>
+      <form action="../css/feedback.php" class="footer-section feedback" method="get">
+        <h1><span>Feedback Form</span></h1>
+        <input type="text" required placeholder="Name" name="username">
+        <input type="email" required placeholder="Email" name="usermail">
+        <textarea name="userfeedback" maxlength="200" required placeholder="Message"></textarea>
+        <button class="btn button btn-primary" style="width:120px; height: 40px; border-radius:10px;">Send Message</button>
+    </form>
+
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+    &copy; BloodBank.com.np | Designed by BloodBank
+  </div>
+
+</body>
+
+</html>

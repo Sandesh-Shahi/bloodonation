@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* Header and Body section------------------Header */
+
+.header
+{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    height: 70px;
+    position:fixed;
+    z-index: 999;
+    text-align: center;
+    gap: 45%;
+    width: 100%;
+    top:0;
+    
+}
+.logo img
+{
+    display: flex;
+    width:auto;
+    justify-content: left;
+    /* margin-left: 20px; */
+    height: 70px;
+    border-top-right-radius: 3px;
+    border-bottom: black 3px solid;
+    border-bottom-right-radius: 3px;
+}
+nav
+{
+    
+    display: flex;
+    width: 100%;
+    /* justify-content:right; */
+    padding: 15px;
+    
+    
+    
+
+
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    
+    
+}
+nav ul {
+    list-style: none;
+   display:flex;
+   flex-direction:row;
+   text-decoration: none;
+   gap: 40px;
+   
+}
+nav ul li 
+{
+    display: flex;
+    justify-content: center;
+
+}
+nav ul li i{
+    transform: translateY(-1px);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.header button{
+    display: none;
+}
+nav ul li a:hover{
+    text-decoration: none;
+}
+.carousel-item img{
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+/* Footer Section-------------------------------Footer  */
+
+.footer-content
+{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    height:auto;
+    gap: 50px;
+    width: auto;
+    color: white;
+        
+    
+    
+}
+
+.footer-section {
+    width: 30%;
+    margin-left: 1%;
+    height: 80%;
+    gap: 8px;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+.footer-section h1{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: none;
+}
+.footer-section input,textarea{
+    border: none;
+    border-radius:3px ;
+    height: 30px;
+    text-align: center;
+    width: 70%;
+    
+}
+.footer-section textarea
+{
+    height: 100px;
+}
+.footer-section button{
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(150, 111, 248);
+    color: rgb(255, 255, 255);
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 4px;
+    
+}
+.footer-bottom
+{
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 250, 250);
+    font-weight: bolder;
+}
+
+.links ul li{
+    list-style: none;
+}
+.links ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.logo-text{
+    display: flex;
+    flex-direction:row;
+    gap: 5px;
+    margin-left: 10px;
+    color: rgb(56, 167, 56);
+}
+.logo-text span{
+    color: red;
+}
+
+/* @Media query Section--------------------------------------- */
+@media screen and (max-width: 1080px)
+{
+    .logo img
+    {
+        width: 100px;
+        height: 50px;
+    
+    }
+   .nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width:200px;
+    right: -100%;
+   
+    position: fixed;
+    background-color: black;
+    height: 350px;
+    text-align: center;
+    top: 50px;
+    transition: all .5s;
+    
+    
+
+  }
+  
+  
+ 
+.header{
+    height: 50px;
+}
+.header{
+    display: flex;
+    gap: 1%;
+}
+ #check{
+    width: 50px;
+    height: 50px;
+    border-top-right-radius: 3px;
+    background-color: transparent;
+    border: none;
+    border-bottom-right-radius: 3px;
+    
+    margin-right: 10px;
+    display:block;
+    cursor: pointer;
+}
+
+.nav  ul li a:hover{
+    background-color:rgb(57, 103, 255) ;
+    background-size: contain;
+    color: white;
+    width: 100%;
+
+}
+
+
+/* footer .footer-section */
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: rgb(59, 59, 90);
+
+    border-top: 5px rgb(17, 56, 252) solid;
+ 
+}
+.footer-section{
+    width: 100%;
+  
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: none;
+}
+.footer-section input,textarea{
+    border: none;
+    border-radius:3px ;
+    text-align: center;
+    width: 90%;
+    height: 30px;
+    
+}
+.footer-section textarea
+{
+    height: 100px;
+}
+.links ul li a{
+    color: white;
+}
+.links h1{
+    color: white;
+}
+.feedback h1{
+    color: white;
+}
+.links ul li a:hover {
+    background-color: white;
+    color: black;
+    background-size: 100px;
+}
+.footer-bottom
+{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    background-color: rgb(59, 59, 90);
+}
+/* copy  */
+
+
+}
+@media screen and (max-width: 680px)
+{
+    .logo img
+    {
+        width: 80px;
+        height: 40px;
+    
+    }
+   .nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width:200px;
+    right: -100%;
+   
+    position: fixed;
+    background-color: black;
+    height: 350px;
+    text-align: center;
+    top: 40px;
+    transition: all .5s;
+    
+    
+
+  }
+  
+  
+ 
+.header{
+    height: 40px;
+}
+.header{
+    display: flex;
+    gap: 1%;
+}
+ #check{
+    width: 40px;
+    height: 30px;
+  
+    background-color: transparent;
+    border: none;
+ 
+    
+    margin-right: 10px;
+    display:block;
+    cursor: pointer;
+}
+
+.nav  ul li a:hover{
+    background-color:rgb(57, 103, 255) ;
+    background-size: contain;
+    color: white;
+    width: 100%;
+    border: none;
+
+}
+
+
+/* footer .footer-section */
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: rgb(59, 59, 90);
+    border-top: 5px rgb(17, 56, 252) solid;
+ 
+}
+.footer-section{
+    width: 100%;
+  
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: none;
+}
+.footer-section input,textarea{
+    border: none;
+    border-radius:3px ;
+    text-align: center;
+    width: 90%;
+    height: 30px;
+    
+}
+.footer-section textarea
+{
+    height: 100px;
+}
+.links ul li a{
+    color: white;
+}
+.links h1{
+    color: white;
+}
+.feedback h1{
+    color: white;
+}
+.links ul li a:hover {
+    background-color: white;
+    color: black;
+    background-size: 100px;
+}
+.footer-bottom
+{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    background-color: rgb(59, 59, 90);
+}
+/* copy  */
+
+
+}
+
+  
+  

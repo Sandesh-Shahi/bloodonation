@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- css file for header and footer -->
+	<link rel="stylesheet" href="../css/donate.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/
+	4.0.0/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/
+	jquery/3.3.1/jquery.min.js">
+	</script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/
+	popper.js/1.12.9/umd/popper.min.js">
+	</script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/
+	4.0.0/js/bootstrap.min.js">
+
+	</script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="stylesheet" href="signup.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+
+	</script>
+	<script>
+		$(document).ready(function () {
+			$("#check").click(function () {
+				$(".nav ul").css("right", "0");
+			});
+			$("#img").click(function () {
+				$(".nav ul").css("right", "-100%");
+			});
+			$(".nav ul ").mouseleave(function () {
+				$(".nav ul").css("right", "-100%");
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<!-- Header -->
+
+	<div class="header">
+		<div class="logo">
+			<a href="../index.html"><img src="/img/blood .png" alt="Blood Logo"></a>
+		</div>
+		<nav class=" nav">
+			<ul>
+				<li>
+					<a href="../index.html" target="_top"><i class="fa fa-home" style="color:red;"></i>
+						Home</a>
+
+				</li>
+				<li> <a href="../gallery/Gallery.html" target="_parent"><i class="fa fa-phone" style="color:red;"></i>
+						Contact Us</a>
+				</li>
+				<li> <a href="../news/news.html" target="_parent"><i class="fa fa-rss" style="color:red;"></i>
+						News</a>
+				</li>
+				<li> <a href="../About/about.html" target="_parent"><i class="fa fa-address-card"
+							style="color:red;"></i> About Us</a>
+				</li>
+				<li> <a href="../RequestForBlood/request.html" target="_parent"><i class="fa fa-heart"
+							style="color:red;"></i> Request for Blood</a>
+				</li>
+				<li> <a href="../login/Login.html" target="_parent"><i class="fa fa-arrow-up" style="color:red;"></i>
+						Login</a>
+				</li>
+			</ul>
+		</nav>
+
+
+		<button type="button" id="check"> <img id="img" src="/img/bar.png" alt=""></button>
+	</div><br>
+	<h1 class="text-center text-dark " style="font-weight: bolder;  margin-top: 100px;">
+		Sign Up Form
+	</h1>
+	<p class="text-center">
+		Please fill this form to create an account.
+	</p>
+
+
+	<div class="container signupform">
+		<div class="col-lg-8
+		m-auto d-block">
+			<form action="signup.php" method="get">
+				<div class="form-group">
+					<label for="user">
+						Username:
+					</label>
+					<input type="text" name="username" id="usernames" class="form-control">
+					<h5 id="usercheck" style="color: red;">
+						**Username is missing
+					</h5>
+				</div>
+
+				<div class="form-group">
+					<label for="user">
+						Email:
+					</label>
+					<input type="email" name="email" id="email" required class="form-control">
+					<small id="emailvalid" class="form-text
+			text-muted invalid-feedback">
+						Your email must be a valid email
+					</small>
+				</div>
+				<div class="address">
+					<label for="address">
+						Address:
+					</label>
+					<Address><input type="text" name="address" id="address" class="form-control" required>
+				</div>
+				<div class="bloodgroup">
+					<label for="bloodgroup">
+						Blood Group:
+					</label>
+					<select name="bloodgroup" id="bloodgroup" class="form-control" required>
+						<option value="blood group" selected>Select your blood group</option>
+						<option value="A+">A+</option>
+						<option value="A-">A-</option>
+						<option value="B+">B+</option>
+						<option value="B-">B-</option>
+						<option value="AB+">AB+</option>
+						<option value="AB-">AB-</option>
+						<option value="O+">O+</option>
+						<option value="O-">O-</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="password">
+						Password:
+					</label>
+					<input type="password" name="pass" id="password" class="form-control">
+					<h5 id="passcheck" style="color: red;">
+						**Please Fill the password
+					</h5>
+				</div>
+
+				<div class="form-group">
+					<label for="conpassword">
+						Confirm Password:
+					</label>
+					<input type="password" name="conf" id="conpassword" class="form-control">
+					<h5 id="conpasscheck" style="color: red;">
+						**Password didn't match
+					</h5>
+				</div>
+
+				<input type="submit" id="submitbtn" value="Submit" class="btn btn-primary">
+			</form>
+		</div>
+	</div>
+
+	<!-- Including app.js jQuery Script -->
+	<script src="app.js"></script>
+</body>
+
+</html>
