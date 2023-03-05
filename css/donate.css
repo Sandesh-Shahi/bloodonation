@@ -386,7 +386,7 @@ form{
     .logo img
     {
         width: 80px;
-        height: 50px;
+        height: 41px;
     
     }
    .nav ul{
@@ -409,9 +409,11 @@ form{
 
   }
   .nav ul img{
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     cursor: pointer;
+    filter: blur(0px);
+    filter: saturate(100%);
     
 
   
@@ -423,7 +425,7 @@ form{
 
   
   
-
+  }
 .header{
     display: flex;
     gap: 1%;
@@ -506,7 +508,7 @@ form{
     font-weight: bolder;
     background-color: rgb(59, 59, 90);
 }
-/* copy  */
+
 
 
 }
