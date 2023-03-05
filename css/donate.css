@@ -280,12 +280,12 @@ form{
         height: 25px;
         cursor: pointer;
         display: inline;
-        filter: invert(100%);
+      
       
         
       }
       .nav ul img:hover{
-       filter: none;
+  
        transition: .5s;
       }
      
