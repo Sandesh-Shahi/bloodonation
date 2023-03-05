@@ -34,20 +34,21 @@
         }
        
       </script>
-      <script>
-        $(document).ready(function(){
-          $("#check").click(function(){
-            $(".nav ul").css("right","0");
-          });
-          $("#img").click(function(){
-            $(".nav ul").css("right","-100%");
-          });
-              $("#check").dblclick(function()
-                          {
+     <script>
+      $(document).ready(function(){
+        $("#check").click(function(){
+          $(".nav ul").css("right","0");
+        });
+        $("#img").click(function(){
           $(".nav ul").css("right","-100%");
         });
+        $(".nav ul img").click(function(){
+          $(".nav ul").css("right","-100%");
         });
-      </script>
+       
+        
+      });
+    </script>
 </head>
 <body>
   <!-- header  -->
