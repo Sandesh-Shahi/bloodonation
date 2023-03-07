@@ -7,11 +7,11 @@ $blood_group=$_GET['bloodgroup'];
 $passwrd=$_GET['pass'];
 $confirm=$_GET['conf'];
 // Connect to the database
-$servername = "localhost";
-$username = "root";
-$password = "poudeL46@";
-$database = "blood";
-$conn = mysqli_connect($servername, $username, $password, $database);
+  $mysqli = mysqli_init();
+  $mysqli->ssl_set(NULL, NULL, "/etc/ssl/certs/ca-certificates.crt", NULL, NULL);
+  $mysqli->real_connect($_ENV["HOST"], $_ENV["USERNAME"], $_ENV["PASSWORD"], $_ENV["DATABASE"]);
+  $mysqli->close();
+$conn = mysqli_connect($_ENV["HOST"], $_ENV["USERNAME"], $_ENV["PASSWORD"], $_ENV["DATABASE"];
 // Check the connection
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
